@@ -51,7 +51,7 @@ class Main extends PluginBase implements Listener
 		
 		if($player === $sender){
 			$sender->sendMessage(TextFormat::DARK_RED."You can't clear your inventory does /cim");
-			return \true;
+			return true;
 		if($player instanceof Player){
                 	if (!($sender->hasPermission(m77e.cip))){
                         	$sender->sendMessage(TextFormat::DARK_BLUE."Succesfully cleared inventory from "$player->getName());
